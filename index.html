@@ -151,6 +151,21 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
+.artwork a,
+.hero-image a {
+  position: relative;
+  display: inline-block;
+}
+
+.artwork a::after,
+.hero-image a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: transparent;
+}
+    
   </style>
 </head>
 
